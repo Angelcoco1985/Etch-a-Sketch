@@ -1,10 +1,18 @@
 .container {
     display: flex;
     flex-wrap: wrap;
+    width: 870px;
+    flex-shrink: 0;
+    flex-grow: 0;
 }
 .divDesign {
     background-color: red;
     height: 50px;
     width: 50px;
-    margin: 5px;
+    margin: 1px;
+}
+
+.divDesign:hover {
+    background-color: blue;
+    transition: opacity 0.3s ease-in-out;
 }
