@@ -11,6 +11,10 @@ button.addEventListener("click", () => {
                 const divs = document.createElement("div");
                 divs.classList.add("divDesign");
                 container.appendChild(divs);
+
+                divs.addEventListener("mousemove", () => {
+                    divs.style.backgroundColor = "green"; // Change to random color with opacity
+                });
             }
         }
         
@@ -24,6 +28,11 @@ function layOutGrid() {
         const divs = document.createElement("div");
         divs.classList.add("divDesign");
         container.appendChild(divs);
+
+        divs.addEventListener("mousemove", () => {
+            divs.style.backgroundColor = "green"; // Change to random color with opacity
+        });
+
     }
 }
 
@@ -31,10 +40,8 @@ function clearGrid() {
     container.innerHTML = "";
 }
 
-// divs.addEventListener("mouseenter", () => {
-//     divs.style.backgroundColor = "green";
-// })
+
+//Figure out how to change colors of grid permanetnly and figure
+//out opacity rgb random value
 
 layOutGrid();
-
-// create container in js and make div squares with for loop
